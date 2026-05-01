@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form id="application-form" method="post" action="/apply">
+      <h1>ฟอร์มสมัครเข้าร่วมเวิร์กช็อป</h1>
+
+      <fieldset>
+        <legend>ข้อมูลผู้สมัคร</legend>
+
+        <label for="applicant-name">ชื่อ-นามสกุล</label>
+        <input id="applicant-name" name="applicantName" type="text" required />
+
+        <label for="experience">ประสบการณ์</label>
+        <select id="experience" name="experience" required>
+          <option value="">เลือกระดับ</option>
+          <option value="beginner">Beginner</option>
+          <option value="intermediate">Intermediate</option>
+          <option value="advanced">Advanced</option>
+        </select>
+      </fieldset>
+
+      <fieldset>
+        <legend>ข้อมูลติดต่อ</legend>
+
+        <label for="contact-email">อีเมล</label>
+        <input id="contact-email" name="contactEmail" type="email" required />
+
+        <label for="contact-phone">เบอร์โทร</label>
+        <input id="contact-phone" name="contactPhone" type="tel" />
+      </fieldset>
+
+      <fieldset>
+        <legend>ความต้องการเพิ่มเติม</legend>
+
+        <label for="goal">เป้าหมายของคุณ</label>
+        <textarea id="goal" name="goal" required></textarea>
+      </fieldset>
+
+      <button type="submit">ส่งใบสมัคร</button>
+    </form>
+    <a href="./index.html">back</a>
+  </body>
+</html>

@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form id="profile-form" method="post" action="/profiles/create">
+      <h1>ข้อมูลผู้เรียน</h1>
+
+      <label for="username">ชื่อผู้ใช้</label>
+      <input
+        id="username"
+        name="username"
+        type="text"
+        placeholder="เช่น sara_dev"
+        required
+      />
+
+      <label for="track">สายการเรียน</label>
+      <select id="track" name="track" required>
+        <option value="choose">เลือกสายการเรียน</option>
+        <option value="frontend">Frontend</option>
+        <option value="backend">Backend</option>
+        <option value="fullstack">Fullstack</option>
+      </select>
+
+      <label for="about">แนะนำตัว</label>
+      <textarea
+        id="about"
+        name="about"
+        placeholder="บอกเป้าหมายการเรียนของคุณ"
+        required
+      ></textarea>
+
+      <button type="submit">บันทึกโปรไฟล์</button>
+    </form>
+    <a href="./workshop3.html">next</a>
+  </body>
+</html>
