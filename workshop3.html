@@ -13,7 +13,13 @@
         <legend>ข้อมูลผู้สมัคร</legend>
 
         <label for="applicant-name">ชื่อ-นามสกุล</label>
-        <input id="applicant-name" name="applicantName" type="text" required />
+        <input
+          id="applicant-name"
+          name="applicantName"
+          type="text"
+          placeholder="กรอกชื่อ-นามสกุล"
+          required
+        />
 
         <label for="experience">ประสบการณ์</label>
         <select id="experience" name="experience" required>
@@ -28,17 +34,33 @@
         <legend>ข้อมูลติดต่อ</legend>
 
         <label for="contact-email">อีเมล</label>
-        <input id="contact-email" name="contactEmail" type="email" required />
+        <input
+          id="contact-email"
+          name="contactEmail"
+          type="email"
+          placeholder="กรอกอีเมล"
+          required
+        />
 
         <label for="contact-phone">เบอร์โทร</label>
-        <input id="contact-phone" name="contactPhone" type="tel" />
+        <input
+          id="contact-phone"
+          name="contactPhone"
+          type="tel"
+          placeholder="กรอกเบอร์โทร"
+        />
       </fieldset>
 
       <fieldset>
         <legend>ความต้องการเพิ่มเติม</legend>
 
         <label for="goal">เป้าหมายของคุณ</label>
-        <textarea id="goal" name="goal" required></textarea>
+        <textarea
+          id="goal"
+          name="goal"
+          placeholder="กรอกเป้าหมายของคุณ"
+          required
+        ></textarea>
       </fieldset>
 
       <button type="submit">ส่งใบสมัคร</button>
